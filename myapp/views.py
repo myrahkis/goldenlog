@@ -10,7 +10,7 @@ from .forms import *
 
 def main_page_view(request, string="index"):
     print(string)
-    category_list_dropdown = m.Categories.objects.all()
+    category_list_dropdown = m.Categories.objects.exclude(name="Другое")
     product_list = m.Products.objects.all()
     name = "Категории"
     template_name = 'index.html'
@@ -26,7 +26,8 @@ def main_page_view(request, string="index"):
         template_name = 'categories/lamps.html'
         product_list = m.Products.objects.filter(category__name=string)
     print(product_list.all())
-    return render(request, template_name, {"headName": name, "catListDrop": category_list_dropdown, "prodList": product_list})
+    return render(request, template_name, {"headName": name, "catListDrop": category_list_dropdown,
+                                           "prodList": product_list})
 
 
 def login_view(request):
@@ -38,7 +39,7 @@ def register_view(request):
 
 
 def about_info_view(request):
-    category_list_dropdown = m.Categories.objects.all()
+    category_list_dropdown = m.Categories.objects.exclude(name="Другое")
     return render(request, 'aboutInfo.html',  {"catListDrop": category_list_dropdown})
 
 
@@ -95,8 +96,10 @@ def about_info_view(request):
 
 @login_required
 def creative_products_view(request):
-    category_list_dropdown = m.Categories.objects.all()
-    return render(request, 'creativeProducts.html', {"catListDrop": category_list_dropdown})
+    category_list_dropdown = m.Categories.objects.exclude(name="Другое")
+    cr_product_list = m.CreativeProducts.objects.all()
+    return render(request, 'categories/creativeProducts.html', {"crProdList": cr_product_list,
+                                                                "catListDrop": category_list_dropdown})
 
 
 class RegisterView(FormView):
@@ -112,7 +115,7 @@ class RegisterView(FormView):
 
 @login_required
 def creative_order_view(request):
-    category_list_dropdown = m.Categories.objects.all()
+    category_list_dropdown = m.Categories.objects.exclude(name="Другое")
     form = CreativeOrderForm()
 
     if request.method == 'POST':
@@ -129,5 +132,5 @@ def creative_order_view(request):
 
 @login_required
 def user_info_view(request):
-    category_list_dropdown = m.Categories.objects.all()
+    category_list_dropdown = m.Categories.objects.exclude(name="Другое")
     return render(request, 'user/userInfo.html', {"catListDrop": category_list_dropdown})

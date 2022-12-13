@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Продукция на заказ{% endblock %}
+{% block css %}<link href="{% static 'css/styleKitchen.css' %}" rel="stylesheet">{% endblock %}
+
+<body>
+    {% block сontend %}
+    <div class="container" style="margin-top: 50px">
+        <h4 style="text-align: center; margin-bottom: 40px">Примеры товаров, сделанных на заказ</h4>
+        <div class="row">
+            {% for pos in crProdList %}
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                              {% with name=pos.id|stringformat:"i" %}
+                              <img src="{% static 'images/orderExample/img'|add:name|add:'.jpg' %}" alt=":("/>
+                              {% endwith %}
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title">{{ pos.name }}</h3>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+
+
+
+{#        <div style="display: flex; justify-content: center">#}
+{#            <img src="https://media.tenor.com/BfGFYekoftQAAAAC/spongebob-squarepants-spongebob.gif" alt="This is an animated gif image, but it does not move"/>#}
+{#        </div>#}
+    {% endblock %}
+</body>
