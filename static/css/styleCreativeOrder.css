@@ -1,0 +1,43 @@
+
+/* registration button styles */
+
+.btn-rounded {
+    border-radius: 19px;
+    border-color: #F2F2F2;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+}
+.btn-primary:visited,
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #BF7636;
+    color: #F2F2F2;
+    border-color: #BF7636;
+}
+.btn-primary{
+    background-color: #f2f2f2;
+    color: black;
+}
+
+a:active,
+a:hover,
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-primary:hover,
+    .btn-primary:visited,
+
+.btn-primary:focus {
+    background-color:  #F2F2F2;
+    color: black;
+    border-color:  #F2F2F2;
+}
+
+.btn-primary{
+    background-color: #BF7636;
+    border: #BF7636;
+    color: #F2F2F2;
+}

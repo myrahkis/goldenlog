@@ -1,0 +1,103 @@
+/* carousel styles */
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.carousel-indicators .active {
+    background-color: saddlebrown;
+}
+
+.carousel {
+  background: saddlebrown;
+}
+
+.carousel-item .img-fluid {
+  width:100%;
+}
+
+.carousel-item a {
+  display: block;
+  width:100%;
+}
+
+/* background carousel */
+
+.backContainer {
+    background: linear-gradient(#40372F, transparent);
+}
+
+/* registration button styles */
+
+.btn-rounded {
+    border-radius: 19px;
+    border-color: #F2F2F2;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+}
+.btn-primary:visited,
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #BF7636;
+    color: #F2F2F2;
+    border-color: #BF7636;
+}
+.btn-primary{
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+    color: black;
+}
+
+a:active,
+a:hover,
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*  MAIN PAGE */
+
+@media (min-width: 1200px) {
+    .containerAbout{
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1070px;
+    }
+}
+
+/*@media (min-width: 1200px) {*/
+/*    .containerAboutMain{*/
+/*        max-width: 1200px;*/
+/*    }*/
+/*}*/
+
+
+.mainImg {
+    float:left;
+    /*margin-top: 30px;*/
+    margin-right: 30px;
+}
+
+.sign {
+    padding: 7px;
+    margin: 10px 0 5px 5px;
+}
+
+.containerImg {
+    display: flex;
+    justify-items: center;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14pt;
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+}
+
+.textAbout {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14pt;
+}

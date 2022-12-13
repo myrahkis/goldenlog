@@ -1,0 +1,88 @@
+.product-grid {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/*add to card*/
+.product-grid .product-image {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.product-grid .product-image a.image{display: block; }
+.product-grid .product-image img{
+    width: 100%;
+    height: 300px;
+}
+
+.product-grid .add-to-cart{
+    background: #8C0327;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    padding: 10px 26px;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    transition: all 0.3s ease 0s;
+}
+.product-grid:hover .add-to-cart{ bottom: 0; }
+.product-grid .add-to-cart:hover{ text-shadow: 4px 4px rgba(0,0,0,0.2); }
+.product-grid .product-content{
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 0 5px rgba(0,0,0,0.1) inset;
+}
+.product-grid .title{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 7px;
+}
+.product-grid .title a{
+    color: #777;
+    transition: all 0.3s ease 0s;
+}
+.product-grid .title a:hover{ color: #8C0327; }
+.product-grid .price{
+    color: #0d0d0d;
+    font-size: 14px;
+    font-weight: 600;
+}
+/*.product-grid .price span{*/
+/*    color: #888;*/
+/*    font-size: 13px;*/
+/*    font-weight: 400;*/
+/*    text-decoration: line-through;*/
+/*}*/
+
+/* registration button styles */
+
+.btn-rounded {
+    border-radius: 19px;
+    border-color: #F2F2F2;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+}
+.btn-primary:visited,
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #BF7636;
+    color: #F2F2F2;
+    border-color: #BF7636;
+}
+.btn-primary{
+    background-color: #f2f2f2;
+    color: black;
+}
+
+a:active,
+a:hover,
+a {
+    text-decoration: none;
+    color: inherit;
+}
