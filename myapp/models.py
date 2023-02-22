@@ -9,7 +9,7 @@ class Categories(models.Model):
     description = models.TextField(max_length=1000, blank=False, verbose_name="description", help_text="Описание категории")
 
     class Meta:
-        db_table = "Categories"
+        db_table = "categories"
         verbose_name = "Category"
 
     def __str__(self):
@@ -25,9 +25,8 @@ class Products(models.Model):
     ownCost = models.IntegerField(blank=False, verbose_name="ownCost", default=0, help_text="Себестоимость")
     weight = models.IntegerField(blank=False, verbose_name="weight", default=0, help_text="Вес")
 
-
     class Meta:
-        db_table = "Products"
+        db_table = "products"
         verbose_name = "Product"
 
     def __str__(self):
@@ -40,7 +39,7 @@ class CreativeProducts(models.Model):
     name = models.CharField(max_length=100, blank=False, verbose_name="nameProd", help_text="Название изделия")
 
     class Meta:
-        db_table = "CreativeProducts"
+        db_table = "creativeproducts"
         verbose_name = "CreativeProduct"
 
     def __str__(self):
@@ -61,7 +60,7 @@ class Orders(models.Model):
     orderDate = models.DateTimeField(blank=False, default=datetime.now, help_text="Дата заказа")
 
     class Meta:
-        db_table = "Orders"
+        db_table = "orders"
         verbose_name = "Order"
 
     def __str__(self):
@@ -99,7 +98,7 @@ class CreativeOrders(models.Model):
     orderDate = models.DateTimeField(blank=False, default=timezone.now(), help_text="Дата заказа")
 
     class Meta:
-        db_table = "CreativeOrders"
+        db_table = "creativeorders"
         verbose_name = "CreativeOrder"
 
     def __str__(self):
