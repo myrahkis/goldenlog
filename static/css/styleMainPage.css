@@ -90,6 +90,8 @@ a {
 .containerImg {
     display: flex;
     justify-items: center;
+    flex-flow: wrap;
+    /*flex-wrap: wrap;*/
 }
 
 p {
