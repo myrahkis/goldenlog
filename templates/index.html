@@ -3,59 +3,54 @@
 {% block title %}GoldenLog{% endblock %}
 {% block css %}<link href="{% static 'css/styleMainPage.css' %}" rel="stylesheet">{% endblock %}
 
-<body>
-{#    "{% static 'images/bedroom.jpg' %}"#}
-{#    "{% static 'images/kitchen.jpg' %}"#}
-{#    "{% static 'images/lamp.jpg' %}"#}
-
 {% block contend %}
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="margin-top: -53px; margin-bottom: 80px">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner rounded-5 shadow-4-strong">
-            <div class="carousel-item active">
-                <a href="" target="_self">
-                    <img srcset="{% static 'images/kitchen1920x342.jpg' %}" alt="responsive image" class="d-block img-fluid">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Кухонный комплект</h5>
+    <div class="container-fluid">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="margin-top: -53px; margin-bottom: 80px">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner rounded-5 shadow-4-strong">
+                <div class="carousel-item active">
+                    <a href="" target="_self">
+                        <img srcset="{% static 'images/kitchen1920x342.jpg' %}" alt="responsive image" class="d-block img-fluid">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Кухонный комплект</h5>
+                    </div>
+                    </a>
                 </div>
-                </a>
-            </div>
-            <div class="carousel-item">
-                <a href="" target="_self">
-                    <img srcset="{% static 'images/bedroom1920x342.jpg' %}" alt="responsive image" class="d-block img-fluid">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Комплект мебели для спальни</h5>
+                <div class="carousel-item">
+                    <a href="" target="_self">
+                        <img srcset="{% static 'images/bedroom1920x342.jpg' %}" alt="responsive image" class="d-block img-fluid">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Комплект мебели для спальни</h5>
+                    </div>
+                    </a>
                 </div>
-                </a>
+                <div class="carousel-item">
+                    <a href="" target="_self">
+                        <img srcset="{% static 'images/lamps1920x342.jpg' %}" alt="responsive image" class="d-block img-fluid">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Лампы</h5>
+                      </div>
+                    </a>
+                </div>
             </div>
-            <div class="carousel-item">
-                <a href="" target="_self">
-                    <img srcset="{% static 'images/lamps1920x342.jpg' %}" alt="responsive image" class="d-block img-fluid">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Лампы</h5>
-                  </div>
-                </a>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
-    <!-- /.carousel -->
-
     <div class="container">
         <h2 style="text-align: center; margin-bottom: 30px">Рекомендуем Вам следующую продукцию:</h2>
-        <div class="textAbout" style="text-align: justify">
+        <div class="textAbout">
             <ul style="margin-bottom: 70px">
                 <li><b>Дверные блоки</b> по конкретным индивидуальным замерам, представленные в разных оттенках и стилях.</li>
                 <li><b>Мебель</b> из благородной древесины для роскошного декора кабинета или офиса</li>
@@ -65,50 +60,51 @@
                     каюты теплохода и т.д.</li>
             </ul>
         </div>
-
-        <h2 style="text-align: center">Почему делать заказы у нас выгодно?</h2>
-        <div class="containerImg" style="margin-bottom: 80px">
-            <figure class="sign">
-               <p><img src="{% static 'images/mech.png' %}" alt=":(" width="220" height="220" style="margin: 80px"></p>
-               <h5 style="text-align: center; margin-top: -60px">Современное оборудование</h5>
-            </figure>
-            <figure class="sign">
-               <p><img src="{% static 'images/money.png' %}" alt=":(" width="220" height="220" style="margin: 80px"></p>
-               <h5 style="text-align: center; margin-top: -60px">Низкие цены</h5>
-            </figure>
-            <figure class="sign">
-               <p><img src="{% static 'images/time.png' %}" alt=":(" width="220" height="220" style="margin: 80px"></p>
-               <h5 style="text-align: center; margin-top: -60px">Быстрота изготовления</h5>
-            </figure>
+        <div class="container">
+            <h2 style="text-align: center">Почему делать заказы у нас выгодно?</h2>
+            <div class="containerImg">
+                <figure class="sign">
+                   <p><img class="sign-img" src="{% static 'images/mech.png' %}" alt=":(" width="220" height="220"></p>
+                   <h5 class="sign-h5">Современное оборудование</h5>
+                </figure>
+                <figure class="sign">
+                   <p><img class="sign-img" src="{% static 'images/money.png' %}" alt=":(" width="220" height="220"></p>
+                   <h5 class="sign-h5">Низкие цены</h5>
+                </figure>
+                <figure class="sign">
+                   <p><img class="sign-img" src="{% static 'images/time.png' %}" alt=":(" width="220" height="220"></p>
+                   <h5 class="sign-h5">Быстрота изготовления</h5>
+                </figure>
+            </div>
         </div>
-
-        <p style="text-align: justify">
-            Мы представляем заказчикам краткую информацию о предоставляемых услугах и видах проводимых работ. Имея
-            собственное высокотехнологичное станочное производство и квалифицированный рабочий персонал, мы выполняем
-            широкую обработку типовых и сопутствующих материалов, создание различных элементов и готовых изделий.
-        </p>
-        <p style="text-align: justify; margin-bottom: 80px">
-            Мы разрабатываем и корректируем технические задания, исправляем изъяны на заготовках, размечаем материал,
-            режем (рубим) его и опиливаем, наносим кромки и фаски, проделываем отверстия, нарезаем резьбу и многое другое.
-            Обработка заготовок ведется без изготовления дорогостоящих форм. Часть информации вы можете получить,
-            более подробно изучив наш сайт и посетив его тематические разделы. На возникшие вопросы ответят наши менеджеры.
-        </p>
-
-        <img src="{% static 'images/main.jpg' %}" style="width: 510px; height: 340px; margin-bottom: 80px" alt="responsive image" class="mainImg">
-        <h2 style="text-align: center; margin-bottom: 15px; ">О НАС</h2>
-        <p style="text-align: justify">
-            «Золотое бревно» имеет огромный опыт работы в деревообрабатывающем производстве. Изделия из древесины,
-            изготовленные нашей компанией, прослужат Вам долго и надежно, они сделают уютным и неповторимым ваш дом
-            (квартиру, офис), будут практичны и удобны в эксплуатации.
-        </p>
-        <p style="text-align: justify">
-            Отдав предпочтение нашей компании, Вы можете быть уверены, что на всех этапах выполнения вашего заказа,
-            начиная от замеров, изготовления и до установки, будут использоваться профессиональные инструменты и оборудование.
-        </p>
-        <button type="button" class="btn btn-primary ms-auto"><a class="button" href="{% url 'about' %}"><i style="padding: 7px 2px;"></i>
+        <div class="container">
+            <p class="p-index-about">
+                Мы представляем заказчикам краткую информацию о предоставляемых услугах и видах проводимых работ. Имея
+                собственное высокотехнологичное станочное производство и квалифицированный рабочий персонал, мы выполняем
+                широкую обработку типовых и сопутствующих материалов, создание различных элементов и готовых изделий.
+            </p>
+            <p class="p-index-about" style="margin-bottom: 80px">
+                Мы разрабатываем и корректируем технические задания, исправляем изъяны на заготовках, размечаем материал,
+                режем (рубим) его и опиливаем, наносим кромки и фаски, проделываем отверстия, нарезаем резьбу и многое другое.
+                Обработка заготовок ведется без изготовления дорогостоящих форм. Часть информации вы можете получить,
+                более подробно изучив наш сайт и посетив его тематические разделы. На возникшие вопросы ответят наши менеджеры.
+            </p>
+            <img class="about-img" src="{% static 'images/main.jpg' %}" alt="responsive image">
+        </div>
+        <div class="container">
+            <h2 class="h2-about">О НАС</h2>
+            <p class="p-index-about">
+                «Золотое бревно» имеет огромный опыт работы в деревообрабатывающем производстве. Изделия из древесины,
+                изготовленные нашей компанией, прослужат Вам долго и надежно, они сделают уютным и неповторимым ваш дом
+                (квартиру, офис), будут практичны и удобны в эксплуатации.
+            </p>
+            <p class="p-index-about">
+                Отдав предпочтение нашей компании, Вы можете быть уверены, что на всех этапах выполнения вашего заказа,
+                начиная от замеров, изготовления и до установки, будут использоваться профессиональные инструменты и оборудование.
+            </p>
+        </div>
+        <button type="button" class="btn-about btn btn-primary ms-auto"><a class="button" href="{% url 'about' %}"><i style="padding: 7px 2px;"></i>
             Подробнее</a>
         </button>
     </div>
 {% endblock %}
-</body>
-</html>

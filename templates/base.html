@@ -16,9 +16,9 @@
     {% block css %}{% endblock %}
     <title>{% block title %}{% endblock %}</title>
 </head>
-<header style="margin-bottom: 110px">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #F2F2F2;">
-      <div class="container-fluid">
+<header class="header" id="header" style="margin-bottom: 110px">
+    <nav class="navbar navbar-expand navbar-light fixed-top" style="background-color: #F2F2F2;">
+      <div class="container-xl">
         <div class="navbar-brand">
             <img src="{% static 'images/logo.png' %}" alt=":(" width="30" height="30" class="d-inline-block align-text-top">
             GoldenLog
@@ -82,16 +82,11 @@
     </nav>
 </header>
 <body>
-    {#    "{% static 'images/bedroom.jpg' %}"#}
-    {#    "{% static 'images/kitchen.jpg' %}"#}
-    {#    "{% static 'images/lamp.jpg' %}"#}
-
     {% block contend %}
     {% endblock %}
-
-    <footer class="text-center text-white" style="background-color: #F2F2F2; margin-top: 200px">
+    <footer class="footer text-center text-white" style="background-color: #F2F2F2; margin-top: 200px">
       <!-- Grid container -->
-      <div class="container pt-1">
+      <div class="container-fluid">
         <!-- Section: Social media -->
         <section class="mb-1">
           <!-- Facebook -->
@@ -102,7 +97,6 @@
             data-mdb-ripple-color="dark"
             ><i class="fab fa-facebook-f"></i
           ></a>
-
           <!-- VK -->
           <a
             class="btn btn-link btn-floating btn-lg text-dark m-1"
@@ -111,7 +105,6 @@
             data-mdb-ripple-color="dark"
             ><i class="fab fa-vk"></i
           ></a>
-
           <!-- Twitter -->
           <a
             class="btn btn-link btn-floating btn-lg text-dark m-1"
@@ -120,7 +113,6 @@
             data-mdb-ripple-color="dark"
             ><i class="fab fa-twitter"></i
           ></a>
-
           <!-- Google -->
           <a
             class="btn btn-link btn-floating btn-lg text-dark m-1"
@@ -129,7 +121,6 @@
             data-mdb-ripple-color="dark"
             ><i class="fab fa-google"></i
           ></a>
-
           <!-- Instagram -->
           <a
             class="btn btn-link btn-floating btn-lg text-dark m-1"
@@ -142,10 +133,9 @@
         <!-- Section: Social media -->
       </div>
       <!-- Grid container -->
-
       <!-- Copyright -->
       <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        ©2022 Copyright: GoldenLog
+        ©2023 Copyright: GoldenLog
       </div>
       <!-- Copyright -->
     </footer>
