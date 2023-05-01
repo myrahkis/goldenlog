@@ -26,6 +26,31 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 110px;
 }
 
+
+/*              lalalalalal                */
+
+/* Navbar section */
+
+.navbar {
+    background-color: transparent;
+    height: 60px;
+    position: fixed;
+    line-height: 65px;
+    /*text-align: center;*/
+    padding: 20px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.highlight {
+    padding: 20px 20px;
+    background-color: #F2F2F2;
+}
+
+/*.nav__toggle-btn {*/
+/*    display: none;*/
+/*}*/
+
+
 /* carousel styles */
 
 .carousel-indicators [data-bs-target] {
@@ -50,7 +75,6 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width:100%;
 }
-
 
 /* registration button styles */
 
@@ -135,9 +159,18 @@ p {
 
 /* footer */
 
-/*.footer {*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #F2F2F2;
+    margin-top: 150px;
+}
 
-/*}*/
 
 /* responsive */
 
@@ -208,9 +241,9 @@ p {
         visibility: hidden;
         display: none;
     }
-    .navbar-expand {
-        flex-wrap: wrap;
-    }
+    /*.navbar-expand {*/
+    /*    flex-wrap: wrap;*/
+    /*}*/
     .h2-about {
         text-align: center;
         margin-bottom: 15px;
