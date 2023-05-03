@@ -148,13 +148,23 @@ p {
     text-align: justify;
 }
 
+.h2-about {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .about-img {
     float:left;
     margin-right: 30px;
-    margin-top: 20px;
+    margin-top: 0;
     width: 510px;
     height: 340px;
     margin-bottom: 80px;
+}
+
+.btn-about-info {
+    display: flex;
+    float: start;
 }
 
 /* footer */
@@ -244,10 +254,6 @@ p {
     /*.navbar-expand {*/
     /*    flex-wrap: wrap;*/
     /*}*/
-    .h2-about {
-        text-align: center;
-        margin-bottom: 15px;
-    }
 }
 
 /* Large: 0(320)-575px */
